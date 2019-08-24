@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -109,8 +109,6 @@
 				1452115B2311DECF007843E1 /* Resources */,
 				1452115C2311DED7007843E1 /* ViewModels */,
 				1452115D2311DEE0007843E1 /* Views */,
-				1452112F2311DDCB007843E1 /* Main.storyboard */,
-				145211342311DDCE007843E1 /* LaunchScreen.storyboard */,
 				145211372311DDCE007843E1 /* Info.plist */,
 			);
 			path = "desafios-iddog";
@@ -168,6 +166,8 @@
 		1452115D2311DEE0007843E1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1452112F2311DDCB007843E1 /* Main.storyboard */,
+				145211342311DDCE007843E1 /* LaunchScreen.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -178,7 +178,6 @@
 				050DBFD225449A7D1A520BE3 /* Pods-desafios-iddog.debug.xcconfig */,
 				221F09696AA0E99DC519B1DE /* Pods-desafios-iddog.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
