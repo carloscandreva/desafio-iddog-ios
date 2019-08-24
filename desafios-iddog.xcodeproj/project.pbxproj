@@ -97,10 +97,12 @@
 		1452112A2311DDCB007843E1 /* desafios-iddog */ = {
 			isa = PBXGroup;
 			children = (
-				1452112B2311DDCB007843E1 /* AppDelegate.swift */,
-				1452112D2311DDCB007843E1 /* ViewController.swift */,
+				145211592311DEAE007843E1 /* AppDelegate */,
+				1452115A2311DEC1007843E1 /* Controllers */,
+				1452115B2311DECF007843E1 /* Resources */,
+				1452115C2311DED7007843E1 /* ViewModels */,
+				1452115D2311DEE0007843E1 /* Views */,
 				1452112F2311DDCB007843E1 /* Main.storyboard */,
-				145211322311DDCE007843E1 /* Assets.xcassets */,
 				145211342311DDCE007843E1 /* LaunchScreen.storyboard */,
 				145211372311DDCE007843E1 /* Info.plist */,
 			);
@@ -123,6 +125,44 @@
 				1452114D2311DDCE007843E1 /* Info.plist */,
 			);
 			path = "desafios-iddogUITests";
+			sourceTree = "<group>";
+		};
+		145211592311DEAE007843E1 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				1452112B2311DDCB007843E1 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		1452115A2311DEC1007843E1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1452112D2311DDCB007843E1 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1452115B2311DECF007843E1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				145211322311DDCE007843E1 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1452115C2311DED7007843E1 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		1452115D2311DEE0007843E1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
