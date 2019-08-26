@@ -14,6 +14,11 @@
 		145211362311DDCE007843E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 145211342311DDCE007843E1 /* LaunchScreen.storyboard */; };
 		145211412311DDCE007843E1 /* desafios_iddogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145211402311DDCE007843E1 /* desafios_iddogTests.swift */; };
 		1452114C2311DDCE007843E1 /* desafios_iddogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1452114B2311DDCE007843E1 /* desafios_iddogUITests.swift */; };
+		145211602311F1E0007843E1 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1452115F2311F1E0007843E1 /* LoginView.xib */; };
+		14521162231203FC007843E1 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14521161231203FC007843E1 /* LoginViewModel.swift */; };
+		1452116623121548007843E1 /* ApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1452116523121548007843E1 /* ApiRouter.swift */; };
+		14521169231218A8007843E1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14521168231218A8007843E1 /* LoginViewController.swift */; };
+		1452116B23121ADB007843E1 /* LoginViewModelable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1452116A23121ADB007843E1 /* LoginViewModelable.swift */; };
 		9DA4BB9AF525D99498BC023D /* Pods_desafios_iddog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5D44B9A4FA06D5A5F5E6629 /* Pods_desafios_iddog.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +54,11 @@
 		145211472311DDCE007843E1 /* desafios-iddogUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "desafios-iddogUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1452114B2311DDCE007843E1 /* desafios_iddogUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = desafios_iddogUITests.swift; sourceTree = "<group>"; };
 		1452114D2311DDCE007843E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1452115F2311F1E0007843E1 /* LoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
+		14521161231203FC007843E1 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		1452116523121548007843E1 /* ApiRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRouter.swift; sourceTree = "<group>"; };
+		14521168231218A8007843E1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		1452116A23121ADB007843E1 /* LoginViewModelable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelable.swift; sourceTree = "<group>"; };
 		221F09696AA0E99DC519B1DE /* Pods-desafios-iddog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-desafios-iddog.release.xcconfig"; path = "Target Support Files/Pods-desafios-iddog/Pods-desafios-iddog.release.xcconfig"; sourceTree = "<group>"; };
 		C5D44B9A4FA06D5A5F5E6629 /* Pods_desafios_iddog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_desafios_iddog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -104,6 +114,7 @@
 		1452112A2311DDCB007843E1 /* desafios-iddog */ = {
 			isa = PBXGroup;
 			children = (
+				14521164231214BD007843E1 /* Services */,
 				145211592311DEAE007843E1 /* AppDelegate */,
 				1452115A2311DEC1007843E1 /* Controllers */,
 				1452115B2311DECF007843E1 /* Resources */,
@@ -143,6 +154,7 @@
 		1452115A2311DEC1007843E1 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				145211672312189B007843E1 /* Login */,
 				1452112D2311DDCB007843E1 /* ViewController.swift */,
 			);
 			path = Controllers;
@@ -159,6 +171,7 @@
 		1452115C2311DED7007843E1 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				14521163231205DB007843E1 /* Login */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -166,10 +179,44 @@
 		1452115D2311DEE0007843E1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1452115E2311F1CD007843E1 /* Login */,
 				1452112F2311DDCB007843E1 /* Main.storyboard */,
 				145211342311DDCE007843E1 /* LaunchScreen.storyboard */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		1452115E2311F1CD007843E1 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				1452115F2311F1E0007843E1 /* LoginView.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		14521163231205DB007843E1 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				14521161231203FC007843E1 /* LoginViewModel.swift */,
+				1452116A23121ADB007843E1 /* LoginViewModelable.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		14521164231214BD007843E1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1452116523121548007843E1 /* ApiRouter.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		145211672312189B007843E1 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				14521168231218A8007843E1 /* LoginViewController.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		3D6AA1765D35E2E39E10F4A0 /* Pods */ = {
@@ -295,6 +342,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				145211602311F1E0007843E1 /* LoginView.xib in Resources */,
 				145211362311DDCE007843E1 /* LaunchScreen.storyboard in Resources */,
 				145211332311DDCE007843E1 /* Assets.xcassets in Resources */,
 				145211312311DDCB007843E1 /* Main.storyboard in Resources */,
@@ -364,8 +412,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1452116B23121ADB007843E1 /* LoginViewModelable.swift in Sources */,
 				1452112E2311DDCB007843E1 /* ViewController.swift in Sources */,
 				1452112C2311DDCB007843E1 /* AppDelegate.swift in Sources */,
+				14521162231203FC007843E1 /* LoginViewModel.swift in Sources */,
+				14521169231218A8007843E1 /* LoginViewController.swift in Sources */,
+				1452116623121548007843E1 /* ApiRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

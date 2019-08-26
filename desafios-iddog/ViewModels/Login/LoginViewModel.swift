@@ -9,6 +9,5 @@
 import Foundation
 
 protocol LoginViewModel {
-    var email: String { get }
-    func login();
+    func doLogin(email: String);
 }
