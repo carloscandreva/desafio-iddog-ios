@@ -9,17 +9,27 @@
 /* Begin PBXBuildFile section */
 		1452112C2311DDCB007843E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1452112B2311DDCB007843E1 /* AppDelegate.swift */; };
 		1452112E2311DDCB007843E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1452112D2311DDCB007843E1 /* ViewController.swift */; };
-		145211312311DDCB007843E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1452112F2311DDCB007843E1 /* Main.storyboard */; };
+		145211312311DDCB007843E1 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1452112F2311DDCB007843E1 /* Login.storyboard */; };
 		145211332311DDCE007843E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 145211322311DDCE007843E1 /* Assets.xcassets */; };
 		145211362311DDCE007843E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 145211342311DDCE007843E1 /* LaunchScreen.storyboard */; };
 		145211412311DDCE007843E1 /* desafios_iddogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145211402311DDCE007843E1 /* desafios_iddogTests.swift */; };
 		1452114C2311DDCE007843E1 /* desafios_iddogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1452114B2311DDCE007843E1 /* desafios_iddogUITests.swift */; };
-		145211602311F1E0007843E1 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1452115F2311F1E0007843E1 /* LoginView.xib */; };
 		14521162231203FC007843E1 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14521161231203FC007843E1 /* LoginViewModel.swift */; };
 		1452116623121548007843E1 /* ApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1452116523121548007843E1 /* ApiRouter.swift */; };
 		14521169231218A8007843E1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14521168231218A8007843E1 /* LoginViewController.swift */; };
 		1452116B23121ADB007843E1 /* LoginViewModelable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1452116A23121ADB007843E1 /* LoginViewModelable.swift */; };
-		9DA4BB9AF525D99498BC023D /* Pods_desafios_iddog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5D44B9A4FA06D5A5F5E6629 /* Pods_desafios_iddog.framework */; };
+		14521170231376EE007843E1 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1452116F231376EE007843E1 /* GalleryViewController.swift */; };
+		145211812314A9B8007843E1 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145211802314A9B8007843E1 /* Coordinator.swift */; };
+		145211832314A9D5007843E1 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145211822314A9D5007843E1 /* Storyboarded.swift */; };
+		145211852314AB92007843E1 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145211842314AB92007843E1 /* MainCoordinator.swift */; };
+		1452118B2314C388007843E1 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1452118A2314C388007843E1 /* Category.swift */; };
+		1452118D2314C717007843E1 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1452118C2314C717007843E1 /* Token.swift */; };
+		145211922314E01E007843E1 /* ImageUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145211912314E01E007843E1 /* ImageUrl.swift */; };
+		145211972314E3F2007843E1 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145211962314E3F2007843E1 /* Errors.swift */; };
+		145211992314E43D007843E1 /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145211982314E43D007843E1 /* ErrorHandler.swift */; };
+		78F5036603F763D7F79AAF8A /* libPods-desafios-iddog-desafios-iddogTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8620DBB5571B03FE20C9ECED /* libPods-desafios-iddog-desafios-iddogTests.a */; };
+		CF66EBF4DE29494BB908DEF3 /* libPods-desafios-iddog.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 39B7D10420A07687095658CC /* libPods-desafios-iddog.a */; };
+		D58580B6737439209E069B28 /* libPods-desafios-iddog-desafios-iddogUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA1A4950153A0EE0C73C183F /* libPods-desafios-iddog-desafios-iddogUITests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +54,7 @@
 		145211282311DDCB007843E1 /* desafios-iddog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "desafios-iddog.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1452112B2311DDCB007843E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1452112D2311DDCB007843E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		145211302311DDCB007843E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		145211302311DDCB007843E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
 		145211322311DDCE007843E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		145211352311DDCE007843E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		145211372311DDCE007843E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,13 +64,27 @@
 		145211472311DDCE007843E1 /* desafios-iddogUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "desafios-iddogUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1452114B2311DDCE007843E1 /* desafios_iddogUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = desafios_iddogUITests.swift; sourceTree = "<group>"; };
 		1452114D2311DDCE007843E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1452115F2311F1E0007843E1 /* LoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
 		14521161231203FC007843E1 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		1452116523121548007843E1 /* ApiRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRouter.swift; sourceTree = "<group>"; };
 		14521168231218A8007843E1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		1452116A23121ADB007843E1 /* LoginViewModelable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelable.swift; sourceTree = "<group>"; };
+		1452116F231376EE007843E1 /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
+		145211802314A9B8007843E1 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		145211822314A9D5007843E1 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		145211842314AB92007843E1 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		1452118A2314C388007843E1 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		1452118C2314C717007843E1 /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
+		145211912314E01E007843E1 /* ImageUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUrl.swift; sourceTree = "<group>"; };
+		145211962314E3F2007843E1 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		145211982314E43D007843E1 /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
 		221F09696AA0E99DC519B1DE /* Pods-desafios-iddog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-desafios-iddog.release.xcconfig"; path = "Target Support Files/Pods-desafios-iddog/Pods-desafios-iddog.release.xcconfig"; sourceTree = "<group>"; };
-		C5D44B9A4FA06D5A5F5E6629 /* Pods_desafios_iddog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_desafios_iddog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		39B7D10420A07687095658CC /* libPods-desafios-iddog.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-desafios-iddog.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D70AC706632328DC274E673 /* Pods-desafios-iddog-desafios-iddogUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-desafios-iddog-desafios-iddogUITests.debug.xcconfig"; path = "Target Support Files/Pods-desafios-iddog-desafios-iddogUITests/Pods-desafios-iddog-desafios-iddogUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		642BC45756D4B62F51D1E6B9 /* Pods-desafios-iddog-desafios-iddogUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-desafios-iddog-desafios-iddogUITests.release.xcconfig"; path = "Target Support Files/Pods-desafios-iddog-desafios-iddogUITests/Pods-desafios-iddog-desafios-iddogUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7669C90A579309DF5FDBE7ED /* Pods-desafios-iddog-desafios-iddogTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-desafios-iddog-desafios-iddogTests.debug.xcconfig"; path = "Target Support Files/Pods-desafios-iddog-desafios-iddogTests/Pods-desafios-iddog-desafios-iddogTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8620DBB5571B03FE20C9ECED /* libPods-desafios-iddog-desafios-iddogTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-desafios-iddog-desafios-iddogTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		906B91F0488A70F076F273B9 /* Pods-desafios-iddog-desafios-iddogTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-desafios-iddog-desafios-iddogTests.release.xcconfig"; path = "Target Support Files/Pods-desafios-iddog-desafios-iddogTests/Pods-desafios-iddog-desafios-iddogTests.release.xcconfig"; sourceTree = "<group>"; };
+		BA1A4950153A0EE0C73C183F /* libPods-desafios-iddog-desafios-iddogUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-desafios-iddog-desafios-iddogUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DA4BB9AF525D99498BC023D /* Pods_desafios_iddog.framework in Frameworks */,
+				CF66EBF4DE29494BB908DEF3 /* libPods-desafios-iddog.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78F5036603F763D7F79AAF8A /* libPods-desafios-iddog-desafios-iddogTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D58580B6737439209E069B28 /* libPods-desafios-iddog-desafios-iddogUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,12 +140,8 @@
 		1452112A2311DDCB007843E1 /* desafios-iddog */ = {
 			isa = PBXGroup;
 			children = (
-				14521164231214BD007843E1 /* Services */,
-				145211592311DEAE007843E1 /* AppDelegate */,
-				1452115A2311DEC1007843E1 /* Controllers */,
 				1452115B2311DECF007843E1 /* Resources */,
-				1452115C2311DED7007843E1 /* ViewModels */,
-				1452115D2311DEE0007843E1 /* Views */,
+				145211932314E2E1007843E1 /* Source */,
 				145211372311DDCE007843E1 /* Info.plist */,
 			);
 			path = "desafios-iddog";
@@ -143,17 +165,10 @@
 			path = "desafios-iddogUITests";
 			sourceTree = "<group>";
 		};
-		145211592311DEAE007843E1 /* AppDelegate */ = {
-			isa = PBXGroup;
-			children = (
-				1452112B2311DDCB007843E1 /* AppDelegate.swift */,
-			);
-			path = AppDelegate;
-			sourceTree = "<group>";
-		};
 		1452115A2311DEC1007843E1 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1452116E231376CA007843E1 /* Gallery */,
 				145211672312189B007843E1 /* Login */,
 				1452112D2311DDCB007843E1 /* ViewController.swift */,
 			);
@@ -179,19 +194,10 @@
 		1452115D2311DEE0007843E1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				1452115E2311F1CD007843E1 /* Login */,
-				1452112F2311DDCB007843E1 /* Main.storyboard */,
+				1452112F2311DDCB007843E1 /* Login.storyboard */,
 				145211342311DDCE007843E1 /* LaunchScreen.storyboard */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		1452115E2311F1CD007843E1 /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				1452115F2311F1E0007843E1 /* LoginView.xib */,
-			);
-			path = Login;
 			sourceTree = "<group>";
 		};
 		14521163231205DB007843E1 /* Login */ = {
@@ -219,11 +225,75 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		1452116E231376CA007843E1 /* Gallery */ = {
+			isa = PBXGroup;
+			children = (
+				1452116F231376EE007843E1 /* GalleryViewController.swift */,
+			);
+			path = Gallery;
+			sourceTree = "<group>";
+		};
+		1452117F2314A9A0007843E1 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				145211802314A9B8007843E1 /* Coordinator.swift */,
+				145211822314A9D5007843E1 /* Storyboarded.swift */,
+				145211842314AB92007843E1 /* MainCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		145211892314C35F007843E1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1452118A2314C388007843E1 /* Category.swift */,
+				1452118C2314C717007843E1 /* Token.swift */,
+				145211912314E01E007843E1 /* ImageUrl.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		145211932314E2E1007843E1 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				145211942314E342007843E1 /* Infrastructure */,
+				1452115D2311DEE0007843E1 /* Views */,
+				1452115C2311DED7007843E1 /* ViewModels */,
+				1452115A2311DEC1007843E1 /* Controllers */,
+				14521164231214BD007843E1 /* Services */,
+				1452117F2314A9A0007843E1 /* Coordinator */,
+				145211892314C35F007843E1 /* Model */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		145211942314E342007843E1 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				145211952314E3C5007843E1 /* Errors */,
+				1452112B2311DDCB007843E1 /* AppDelegate.swift */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		145211952314E3C5007843E1 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				145211962314E3F2007843E1 /* Errors.swift */,
+				145211982314E43D007843E1 /* ErrorHandler.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
 		3D6AA1765D35E2E39E10F4A0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				050DBFD225449A7D1A520BE3 /* Pods-desafios-iddog.debug.xcconfig */,
 				221F09696AA0E99DC519B1DE /* Pods-desafios-iddog.release.xcconfig */,
+				7669C90A579309DF5FDBE7ED /* Pods-desafios-iddog-desafios-iddogTests.debug.xcconfig */,
+				906B91F0488A70F076F273B9 /* Pods-desafios-iddog-desafios-iddogTests.release.xcconfig */,
+				3D70AC706632328DC274E673 /* Pods-desafios-iddog-desafios-iddogUITests.debug.xcconfig */,
+				642BC45756D4B62F51D1E6B9 /* Pods-desafios-iddog-desafios-iddogUITests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -231,7 +301,9 @@
 		FA5BB6AC983C015D2E7F1EB7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C5D44B9A4FA06D5A5F5E6629 /* Pods_desafios_iddog.framework */,
+				39B7D10420A07687095658CC /* libPods-desafios-iddog.a */,
+				8620DBB5571B03FE20C9ECED /* libPods-desafios-iddog-desafios-iddogTests.a */,
+				BA1A4950153A0EE0C73C183F /* libPods-desafios-iddog-desafios-iddogUITests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -247,7 +319,7 @@
 				145211242311DDCB007843E1 /* Sources */,
 				145211252311DDCB007843E1 /* Frameworks */,
 				145211262311DDCB007843E1 /* Resources */,
-				F3216FD66A2ACE8BF1879D0F /* [CP] Embed Pods Frameworks */,
+				8297CA6957D77914F06DA341 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -262,9 +334,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 145211532311DDCE007843E1 /* Build configuration list for PBXNativeTarget "desafios-iddogTests" */;
 			buildPhases = (
+				ED744FF0D799DBE88CEE14F4 /* [CP] Check Pods Manifest.lock */,
 				145211382311DDCE007843E1 /* Sources */,
 				145211392311DDCE007843E1 /* Frameworks */,
 				1452113A2311DDCE007843E1 /* Resources */,
+				82487586CBF1E7B905A66CCA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -280,9 +354,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 145211562311DDCE007843E1 /* Build configuration list for PBXNativeTarget "desafios-iddogUITests" */;
 			buildPhases = (
+				9235560439DFC5BBF5E3AE55 /* [CP] Check Pods Manifest.lock */,
 				145211432311DDCE007843E1 /* Sources */,
 				145211442311DDCE007843E1 /* Frameworks */,
 				145211452311DDCE007843E1 /* Resources */,
+				332AE37D3B0FE1DCA115A63F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -342,10 +418,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				145211602311F1E0007843E1 /* LoginView.xib in Resources */,
 				145211362311DDCE007843E1 /* LaunchScreen.storyboard in Resources */,
 				145211332311DDCE007843E1 /* Assets.xcassets in Resources */,
-				145211312311DDCB007843E1 /* Main.storyboard in Resources */,
+				145211312311DDCB007843E1 /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,21 +463,99 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F3216FD66A2ACE8BF1879D0F /* [CP] Embed Pods Frameworks */ = {
+		332AE37D3B0FE1DCA115A63F /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-desafios-iddog/Pods-desafios-iddog-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-desafios-iddog-desafios-iddogUITests/Pods-desafios-iddog-desafios-iddogUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-desafios-iddog/Pods-desafios-iddog-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-desafios-iddog-desafios-iddogUITests/Pods-desafios-iddog-desafios-iddogUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-desafios-iddog/Pods-desafios-iddog-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-desafios-iddog-desafios-iddogUITests/Pods-desafios-iddog-desafios-iddogUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82487586CBF1E7B905A66CCA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-desafios-iddog-desafios-iddogTests/Pods-desafios-iddog-desafios-iddogTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-desafios-iddog-desafios-iddogTests/Pods-desafios-iddog-desafios-iddogTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-desafios-iddog-desafios-iddogTests/Pods-desafios-iddog-desafios-iddogTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8297CA6957D77914F06DA341 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-desafios-iddog/Pods-desafios-iddog-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-desafios-iddog/Pods-desafios-iddog-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-desafios-iddog/Pods-desafios-iddog-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9235560439DFC5BBF5E3AE55 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-desafios-iddog-desafios-iddogUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED744FF0D799DBE88CEE14F4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-desafios-iddog-desafios-iddogTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -413,11 +566,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				1452116B23121ADB007843E1 /* LoginViewModelable.swift in Sources */,
+				145211812314A9B8007843E1 /* Coordinator.swift in Sources */,
+				145211922314E01E007843E1 /* ImageUrl.swift in Sources */,
+				14521170231376EE007843E1 /* GalleryViewController.swift in Sources */,
 				1452112E2311DDCB007843E1 /* ViewController.swift in Sources */,
+				1452118B2314C388007843E1 /* Category.swift in Sources */,
+				145211972314E3F2007843E1 /* Errors.swift in Sources */,
 				1452112C2311DDCB007843E1 /* AppDelegate.swift in Sources */,
 				14521162231203FC007843E1 /* LoginViewModel.swift in Sources */,
 				14521169231218A8007843E1 /* LoginViewController.swift in Sources */,
 				1452116623121548007843E1 /* ApiRouter.swift in Sources */,
+				145211852314AB92007843E1 /* MainCoordinator.swift in Sources */,
+				145211992314E43D007843E1 /* ErrorHandler.swift in Sources */,
+				1452118D2314C717007843E1 /* Token.swift in Sources */,
+				145211832314A9D5007843E1 /* Storyboarded.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,12 +615,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		1452112F2311DDCB007843E1 /* Main.storyboard */ = {
+		1452112F2311DDCB007843E1 /* Login.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				145211302311DDCB007843E1 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Login.storyboard;
 			sourceTree = "<group>";
 		};
 		145211342311DDCE007843E1 /* LaunchScreen.storyboard */ = {
@@ -626,6 +788,7 @@
 		};
 		145211542311DDCE007843E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7669C90A579309DF5FDBE7ED /* Pods-desafios-iddog-desafios-iddogTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -646,6 +809,7 @@
 		};
 		145211552311DDCE007843E1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 906B91F0488A70F076F273B9 /* Pods-desafios-iddog-desafios-iddogTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -666,6 +830,7 @@
 		};
 		145211572311DDCE007843E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D70AC706632328DC274E673 /* Pods-desafios-iddog-desafios-iddogUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -685,6 +850,7 @@
 		};
 		145211582311DDCE007843E1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 642BC45756D4B62F51D1E6B9 /* Pods-desafios-iddog-desafios-iddogUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
