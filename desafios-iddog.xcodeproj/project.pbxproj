@@ -27,6 +27,7 @@
 		145211922314E01E007843E1 /* ImageUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145211912314E01E007843E1 /* ImageUrl.swift */; };
 		145211972314E3F2007843E1 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145211962314E3F2007843E1 /* Errors.swift */; };
 		145211992314E43D007843E1 /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145211982314E43D007843E1 /* ErrorHandler.swift */; };
+		1452119E2314EAF7007843E1 /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1452119D2314EAF7007843E1 /* Identifiable.swift */; };
 		78F5036603F763D7F79AAF8A /* libPods-desafios-iddog-desafios-iddogTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8620DBB5571B03FE20C9ECED /* libPods-desafios-iddog-desafios-iddogTests.a */; };
 		CF66EBF4DE29494BB908DEF3 /* libPods-desafios-iddog.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 39B7D10420A07687095658CC /* libPods-desafios-iddog.a */; };
 		D58580B6737439209E069B28 /* libPods-desafios-iddog-desafios-iddogUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA1A4950153A0EE0C73C183F /* libPods-desafios-iddog-desafios-iddogUITests.a */; };
@@ -77,6 +78,7 @@
 		145211912314E01E007843E1 /* ImageUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUrl.swift; sourceTree = "<group>"; };
 		145211962314E3F2007843E1 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		145211982314E43D007843E1 /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
+		1452119D2314EAF7007843E1 /* Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiable.swift; sourceTree = "<group>"; };
 		221F09696AA0E99DC519B1DE /* Pods-desafios-iddog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-desafios-iddog.release.xcconfig"; path = "Target Support Files/Pods-desafios-iddog/Pods-desafios-iddog.release.xcconfig"; sourceTree = "<group>"; };
 		39B7D10420A07687095658CC /* libPods-desafios-iddog.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-desafios-iddog.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D70AC706632328DC274E673 /* Pods-desafios-iddog-desafios-iddogUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-desafios-iddog-desafios-iddogUITests.debug.xcconfig"; path = "Target Support Files/Pods-desafios-iddog-desafios-iddogUITests/Pods-desafios-iddog-desafios-iddogUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -256,6 +258,7 @@
 		145211932314E2E1007843E1 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				1452119B2314EA53007843E1 /* Common */,
 				145211942314E342007843E1 /* Infrastructure */,
 				1452115D2311DEE0007843E1 /* Views */,
 				1452115C2311DED7007843E1 /* ViewModels */,
@@ -283,6 +286,22 @@
 				145211982314E43D007843E1 /* ErrorHandler.swift */,
 			);
 			path = Errors;
+			sourceTree = "<group>";
+		};
+		1452119B2314EA53007843E1 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				1452119C2314EAE6007843E1 /* Protocols */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		1452119C2314EAE6007843E1 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				1452119D2314EAF7007843E1 /* Identifiable.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		3D6AA1765D35E2E39E10F4A0 /* Pods */ = {
@@ -578,6 +597,7 @@
 				1452116623121548007843E1 /* ApiRouter.swift in Sources */,
 				145211852314AB92007843E1 /* MainCoordinator.swift in Sources */,
 				145211992314E43D007843E1 /* ErrorHandler.swift in Sources */,
+				1452119E2314EAF7007843E1 /* Identifiable.swift in Sources */,
 				1452118D2314C717007843E1 /* Token.swift in Sources */,
 				145211832314A9D5007843E1 /* Storyboarded.swift in Sources */,
 			);
