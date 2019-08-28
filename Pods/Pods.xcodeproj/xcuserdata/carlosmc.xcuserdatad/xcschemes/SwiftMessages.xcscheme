@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DAB613A18652334F6BFC5F27BADF515D"
-               BuildableName = "libSwiftMessages.a"
+               BuildableName = "SwiftMessages.framework"
                BlueprintName = "SwiftMessages"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>

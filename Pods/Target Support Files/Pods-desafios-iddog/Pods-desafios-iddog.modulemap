@@ -1,4 +1,4 @@
-module Pods_desafios_iddog {
+framework module Pods_desafios_iddog {
   umbrella header "Pods-desafios-iddog-umbrella.h"
 
   export *

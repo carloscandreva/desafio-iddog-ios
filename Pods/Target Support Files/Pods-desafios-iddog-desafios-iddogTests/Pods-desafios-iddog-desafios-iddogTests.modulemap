@@ -1,4 +1,4 @@
-module Pods_desafios_iddog_desafios_iddogTests {
+framework module Pods_desafios_iddog_desafios_iddogTests {
   umbrella header "Pods-desafios-iddog-desafios-iddogTests-umbrella.h"
 
   export *

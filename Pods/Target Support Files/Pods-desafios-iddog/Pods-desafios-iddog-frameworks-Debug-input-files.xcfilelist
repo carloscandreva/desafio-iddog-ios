@@ -1,2 +1,5 @@
 ${PODS_ROOT}/Target Support Files/Pods-desafios-iddog/Pods-desafios-iddog-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework
+${BUILT_PRODUCTS_DIR}/Reachability/Reachability.framework
+${BUILT_PRODUCTS_DIR}/SwiftMessages/SwiftMessages.framework
