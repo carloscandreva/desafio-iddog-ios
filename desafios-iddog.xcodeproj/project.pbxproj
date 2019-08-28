@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1452112C2311DDCB007843E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1452112B2311DDCB007843E1 /* AppDelegate.swift */; };
-		1452112E2311DDCB007843E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1452112D2311DDCB007843E1 /* ViewController.swift */; };
 		145211312311DDCB007843E1 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1452112F2311DDCB007843E1 /* Login.storyboard */; };
 		145211332311DDCE007843E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 145211322311DDCE007843E1 /* Assets.xcassets */; };
 		145211362311DDCE007843E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 145211342311DDCE007843E1 /* LaunchScreen.storyboard */; };
@@ -66,7 +65,6 @@
 		101E507437CBA5E168E40B5F /* Pods-desafios-iddog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-desafios-iddog.debug.xcconfig"; path = "Target Support Files/Pods-desafios-iddog/Pods-desafios-iddog.debug.xcconfig"; sourceTree = "<group>"; };
 		145211282311DDCB007843E1 /* desafios-iddog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "desafios-iddog.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1452112B2311DDCB007843E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1452112D2311DDCB007843E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		145211302311DDCB007843E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
 		145211322311DDCE007843E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		145211352311DDCE007843E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -198,7 +196,6 @@
 				145211C22315F9D3007843E1 /* DogsSelector */,
 				1452116E231376CA007843E1 /* DogGallery */,
 				145211672312189B007843E1 /* Login */,
-				1452112D2311DDCB007843E1 /* ViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -215,10 +212,10 @@
 		1452115C2311DED7007843E1 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				145211CC23163B75007843E1 /* DogSelector */,
+				145211CB23163B61007843E1 /* Dog */,
+				145211CA23163B54007843E1 /* DogList */,
 				14521163231205DB007843E1 /* Login */,
-				145211A02314ECAA007843E1 /* DogListViewModel.swift */,
-				145211B22314FA58007843E1 /* DogViewModel.swift */,
-				145211C02315F3E8007843E1 /* DogsSelectorViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -378,6 +375,30 @@
 				145211C62316130D007843E1 /* DogDetailViewController.swift */,
 			);
 			path = DogDetail;
+			sourceTree = "<group>";
+		};
+		145211CA23163B54007843E1 /* DogList */ = {
+			isa = PBXGroup;
+			children = (
+				145211A02314ECAA007843E1 /* DogListViewModel.swift */,
+			);
+			path = DogList;
+			sourceTree = "<group>";
+		};
+		145211CB23163B61007843E1 /* Dog */ = {
+			isa = PBXGroup;
+			children = (
+				145211B22314FA58007843E1 /* DogViewModel.swift */,
+			);
+			path = Dog;
+			sourceTree = "<group>";
+		};
+		145211CC23163B75007843E1 /* DogSelector */ = {
+			isa = PBXGroup;
+			children = (
+				145211C02315F3E8007843E1 /* DogsSelectorViewModel.swift */,
+			);
+			path = DogSelector;
 			sourceTree = "<group>";
 		};
 		3D6AA1765D35E2E39E10F4A0 /* Pods */ = {
@@ -671,7 +692,6 @@
 				145211B52314FED0007843E1 /* DogLoadingCollectionViewCell.swift in Sources */,
 				14521170231376EE007843E1 /* DogGalleryViewController.swift in Sources */,
 				145211A12314ECAA007843E1 /* DogListViewModel.swift in Sources */,
-				1452112E2311DDCB007843E1 /* ViewController.swift in Sources */,
 				145211B12314FA06007843E1 /* DogCollectionViewCell.swift in Sources */,
 				1452118B2314C388007843E1 /* DogsCategory.swift in Sources */,
 				145211972314E3F2007843E1 /* Errors.swift in Sources */,
