@@ -32,7 +32,7 @@ Challenge for Mobile foram utilizados as seguintes PODS
   - Utilizado para validação de conexão com internet.
 
 
-### Tech
+### Resumo
 
 Foi utilizad uma arquitetura MVVM, utilizando um Coordinator para cordenar a navegação entre as controller.
 Faltou colocar Lottie e tratar melhor o layout. Não consegui também terminar o mock com JSON, junto da sessão e o Alomofire. Além de melhorias futuras no layout nesse projeto, prentedo refazer a parte de URL e sessão nos testes, para assim contemplar melhor JSONS de requests mockados e também contruir um test de UI testando os componentes de tela, quem sabe até utilizar o FBSnapshot para testes de aparência fixa. A api não possuia páginação, teria como fazer uma páginação local, mas preferi deixar loading infnito. Poderia também ter adicionado um arquivo de internacionalização, mas infelizmente não consegui muito tempoi essa semana, acredito que ao menos o conceito de arquitetura já consegui passar aqui.
