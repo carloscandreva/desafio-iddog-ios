@@ -7,3 +7,15 @@
 //
 
 import Foundation
+import UIKit
+import Kingfisher
+
+struct DogViewModel {
+    private(set) var imageURL: String = String()
+}
+
+extension DogViewModel {
+    init(_ url: String) {
+        imageURL = url
+    }
+}
