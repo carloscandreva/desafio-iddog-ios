@@ -10,15 +10,15 @@ def commomPods
   pod 'Reachability', "~>3.2"
 end
 
-target 'desafios-iddog' do
+target 'desafiosIddog' do
 
   commomPods
 
-  target 'desafios-iddogTests' do
+  target 'desafiosIddogTests' do
     inherit! :complete
   end
 
-  target 'desafios-iddogUITests' do
+  target 'desafiosIddogUITests' do
     inherit! :complete
   end
 end

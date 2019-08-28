@@ -1,0 +1,11 @@
+{
+"user":{
+"_id":"5d6485bf474daa51e9b20191",
+"email":"carloscandreva@gmail.com",
+"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJpZGRvZy1zZXJ2aWNlIiwic3ViIjoiNWQ2NDg1YmY0NzRkYWE1MWU5YjIwMTkxIiwiaWF0IjoxNTY2ODY4OTI3LCJleHAiOjE1NjgxNjQ5Mjd9.9f-dDP91GsWcpudk3ZhnKz2xdyjKWPVNIxv-RKBAl20",
+"createdAt":"2019-08-27T01:22:07.821Z",
+"updatedAt":"2019-08-27T01:22:07.821Z",
+"__v":0
+}
+}
+
