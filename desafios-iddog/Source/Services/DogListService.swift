@@ -19,9 +19,8 @@ protocol DogServiceProtocol {
     /// - Parameters:
     ///   - token: User Token For Api
     ///   - category: Category of Dogs That Will Load
-    ///   - perPage: Items per page (max = 80)
     ///   - completion: Completion block
-    func getDogsList(token: String, completion: @escaping ((() throws -> (BeerList)) -> Void))
+    func getDogsList(token: String, category: String, completion: @escaping ((() throws -> ([DogViewModel])) -> Void))
 }
 
 
@@ -33,25 +32,29 @@ class DogsService: DogServiceProtocol {
         self.reachability = reachability
     }
 
-    func getDogsList(token: String, completion: @escaping ((() throws -> (BeerList)) -> Void)) {
+    func getDogsList(token: String, category: String, completion: @escaping ((() throws -> ([DogViewModel])) -> Void)) {
         guard reachability.internetIsReachable else {
-            completion { throw BrewDogError.offlineMode }
+            completion { throw Errors.offlineMode }
             return
         }
 
-        Alamofire.request(ApiRouter.feed(token))
+        Alamofire.request(ApiRouter.feed(token, category))
             .validate(statusCode: 200..<300)
-            .responseDecodable { (response: DataResponse) in
+            .responseJSON { (response: DataResponse) in
             switch response.result {
-            case .success(let board):
+            case .success( _):
                 do {
-                    let dogs = try JSONDecoder().decode([Beer].self, from: data)
-
-                    let beerList = BeerList(beers: beers)
-
-                    completion { beerList }
+                    guard let d = response.data else { return }
+                    let decoder = JSONDecoder()
+                    let dogsCategory = try decoder.decode(DogsCategory.self, from: d)
+                    var dogs: [DogViewModel] = []
+                    dogsCategory.list.forEach { url in
+                        let dog = DogViewModel(imageURL: url)
+                        dogs.append(dog)
+                    }
+                    completion { dogs }
                 } catch {
-                    completion { throw Errors.parse(String(describing: [Beer].self)) }
+                    completion { throw Errors.parse(String(describing: DogsCategory.self)) }
                 }
             case .failure(let error):
                 print(error.localizedDescription)
@@ -59,21 +62,5 @@ class DogsService: DogServiceProtocol {
             }
         }
 
-//        session.loadData(from: url) { data, _, error in
-//            if let error = error {
-//                print(error.localizedDescription)
-//                completion { throw error }
-//            } else if let data = data {
-//                do {
-//                    let beers = try JSONDecoder().decode([Beer].self, from: data)
-//
-//                    let beerList = BeerList(beers: beers)
-//
-//                    completion { beerList }
-//                } catch {
-//                    completion { throw BrewDogError.parse(String(describing: [Beer].self)) }
-//                }
-//            }
-//        }
     }
 }
