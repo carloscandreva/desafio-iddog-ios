@@ -6,4 +6,19 @@
 //  Copyright © 2019 Carlos Alberto Mota Candreva. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class DogLoadingCollectionViewCell: UICollectionViewCell {
+    @IBOutlet weak var activityIndicatorView: UIActivityIndicatorView!
+}
+
+// MARK: - Auxiliar methods
+extension DogLoadingCollectionViewCell {
+    func setup() {
+        activityIndicatorView.startAnimating()
+        activityIndicatorView.color = .silver
+    }
+}
+
+// MARK: - Identifiable
+extension DogLoadingCollectionViewCell: Identifiable {}
