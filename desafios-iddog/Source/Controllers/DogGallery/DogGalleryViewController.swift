@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DogGalleryViewController: UICollectionViewController {
+class DogGalleryViewController: UICollectionViewController, Storyboarded {
     struct Constants {
         static let cellsPerRow: Int = 2
         static let loadingCellHeight: CGFloat = 50
@@ -19,7 +19,10 @@ class DogGalleryViewController: UICollectionViewController {
         static let cellUsedHeight: CGFloat = cellImageMargins + (4.0 * 2.0) + (3.0 * 20.5)
     }
 
-    private var beerListViewModel = BeerListViewModel()
+    private var dogListViewModel = DogListViewModel()
+    weak var coordinator: MainCoordinator?
+    var token: String?
+    var category: String?
 
     private lazy var refreshControl: UIRefreshControl = {
         let refreshControl = UIRefreshControl()
@@ -35,22 +38,17 @@ class DogGalleryViewController: UICollectionViewController {
 extension DogGalleryViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        beerListViewModel.delegate = self
+        dogListViewModel.delegate = self
+        dogListViewModel.setToken(token: self.token ?? "")
+        dogListViewModel.setCategory(category: self.category ?? "")
         collectionView?.refreshControl = refreshControl
-    }
-
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let cell = sender as? BeerCollectionViewCell,
-            let controller = segue.destination as? BeerDetailViewController {
-            controller.setup(cell.beerViewModel)
-        }
     }
 }
 
 // MARK: - Private methods
 private extension DogGalleryViewController {
     @objc private func refresh() {
-        beerListViewModel.fetch(refresh: true)
+        dogListViewModel.fetch(refresh: true)
     }
 }
 
@@ -58,9 +56,16 @@ private extension DogGalleryViewController {
 // MARK: - Delegate
 extension DogGalleryViewController {
     override func collectionView(_ collectionView: UICollectionView, didEndDisplaying cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        if case .beer = beerListViewModel.cellType(at: indexPath),
-            let beerCell = cell as? BeerCollectionViewCell {
-            beerCell.bannerImage.kf.cancelDownloadTask()
+        if case .dog = dogListViewModel.cellType(at: indexPath),
+            let dogCell = cell as? DogCollectionViewCell {
+            dogCell.bannerImage.kf.cancelDownloadTask()
+        }
+    }
+
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let cell : UICollectionViewCell? = collectionView.cellForItem(at: indexPath)
+        if let dogCell = cell as? DogCollectionViewCell {
+            coordinator?.dogDetail(dogViewModel: dogCell.dogViewModel)
         }
     }
 }
@@ -68,20 +73,20 @@ extension DogGalleryViewController {
 // MARK: - Datasource
 extension DogGalleryViewController {
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return beerListViewModel.numberOfItens(in: section)
+        return dogListViewModel.numberOfItens(in: section)
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 
-        let cellType = beerListViewModel.cellType(at: indexPath)
+        let cellType = dogListViewModel.cellType(at: indexPath)
         switch cellType {
-        case .beer(let beerViewModel):
-            let cell = collectionView.dequeueReusableCell(viewType: BeerCollectionViewCell.self, for: indexPath)
-            cell.setup(beer: beerViewModel)
+        case .dog(let dogViewModel):
+            let cell = collectionView.dequeueReusableCell(viewType: DogCollectionViewCell.self, for: indexPath)
+            cell.setup(dog: dogViewModel)
             return cell
         case .loading:
-            let cell = collectionView.dequeueReusableCell(viewType: BeerLoadingCollectionViewCell.self, for: indexPath)
-            beerListViewModel.fetch()
+            let cell = collectionView.dequeueReusableCell(viewType: DogLoadingCollectionViewCell.self, for: indexPath)
+            dogListViewModel.fetch()
             cell.setup()
             return cell
         }
@@ -89,9 +94,9 @@ extension DogGalleryViewController {
 }
 
 
-// MARK: - BeerListViewModelDelegate
-extension DogGalleryViewController: BeerListViewModelDelegate {
-    func beerListViewModelWasFetch(_ viewModel: BeerListViewModel) {
+// MARK: - DogListViewModelDelegate
+extension DogGalleryViewController: DogListViewModelDelegate {
+    func dogListViewModelWasFetch(_ viewModel: DogListViewModel) {
         DispatchQueue.main.async {
             self.collectionView.reloadData()
             if self.refreshControl.isRefreshing {
@@ -100,7 +105,7 @@ extension DogGalleryViewController: BeerListViewModelDelegate {
         }
     }
 
-    func beerListViewModel(_ viewModel: BeerListViewModel, threw error: Error) {
+    func dogListViewModel(_ viewModel: DogListViewModel, threw error: Error) {
         HandleError.handle(error: error)
     }
 }
@@ -109,9 +114,9 @@ extension DogGalleryViewController: BeerListViewModelDelegate {
 extension DogGalleryViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
 
-        let cellType = beerListViewModel.cellType(at: indexPath)
+        let cellType = dogListViewModel.cellType(at: indexPath)
         switch cellType {
-        case .beer:
+        case .dog:
             let width = (collectionView.frame.width - Constants.margins)/CGFloat(Constants.cellsPerRow)
             let imageSize: CGFloat = width - Constants.cellImageMargins
             let height: CGFloat = Constants.cellUsedHeight + imageSize
