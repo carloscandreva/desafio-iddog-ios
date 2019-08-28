@@ -15,7 +15,7 @@ public enum ApiRouter: URLRequestConvertible {
     }
 
     case signUp(String)
-    case feed(String)
+    case feed(String, String)
 
     var method: HTTPMethod {
         switch self {
@@ -39,15 +39,15 @@ public enum ApiRouter: URLRequestConvertible {
         switch self {
         case .signUp(let email):
             return ["email": email]
-        default:
-            return [:]
+        case .feed(_, let category):
+            return ["category": category]
         }
     }
 
     var authenticationToken: String {
         switch self {
-        case .feed(let token):
-            return "Basic \(token)"
+        case .feed(let token, _):
+            return "\(token)"
         default:
             return "Basic xxx"
         }
