@@ -13,14 +13,14 @@ protocol DogListViewModelDelegate: class {
 
     /// Called when the list of dog is updated
     ///
-    /// - Parameter viewModel: BeerListViewModel
+    /// - Parameter viewModel: DogListViewModel
     func dogListViewModelWasFetch(_ viewModel: DogListViewModel)
 
 
     /// Called when some error happen
     ///
     /// - Parameters:
-    ///   - viewModel: BeerListViewModel
+    ///   - viewModel: DogListViewModel
     ///   - error: Error
     func dogListViewModel(_ viewModel: DogListViewModel, threw error: Error)
 }
@@ -28,27 +28,23 @@ protocol DogListViewModelDelegate: class {
 class DogListViewModel {
     weak var delegate: DogListViewModelDelegate?
 
-    private(set) var beers: [BeerViewModel] = []
+    private(set) var dogs: [DogViewModel] = []
 
-    private var page: Int = 0
-    private var service: BeerServiceProtocol
+    private var token: String = ""
+    private var category: String = ""
+    private var service: DogServiceProtocol
     private var fetchCompleted = false
     private var isFetching = false
     private var error = false
 
-    init(beerService: BeerServiceProtocol = BeerService()) {
-        self.service = beerService
+    init(dogsService: DogServiceProtocol = DogsService()) {
+        self.service = dogsService
     }
 }
 
 // MARK: - Private
 private extension DogListViewModel {
-    struct Constants {
-        static let pageSize: Int = 8
-    }
-
     func refresh() {
-        page = 0
         fetchCompleted = false
     }
 }
@@ -58,10 +54,10 @@ extension DogListViewModel {
 
     /// Possible cell types
     ///
-    /// - beer: beer cell
+    /// - dog: dog cell
     /// - loading: loading cell
     enum CellType {
-        case dog(DogListViewModel)
+        case dog(DogViewModel)
         case loading
     }
 
@@ -81,14 +77,14 @@ extension DogListViewModel {
     /// - Parameter indexPath: indexPath
     /// - Returns: Cell type
     func cellType(at indexPath: IndexPath) -> CellType {
-        if indexPath.row > beers.count - 1 {
+        if indexPath.row > dogs.count - 1 {
             return .loading
         }
-        return .dogs(dogs[indexPath.row])
+        return .dog(dogs[indexPath.row])
     }
 
 
-    /// Fetches beer list
+    /// Fetches dog list
     ///
     /// - Parameter refresh: True if screen is being refreshed
     func fetch(refresh: Bool = false) {
@@ -101,33 +97,36 @@ extension DogListViewModel {
         }
 
         error = false
-        page += 1
         isFetching = true
-        service.getBeerList(page: page, perPage: Constants.pageSize) { [weak self] (callback) in
+        service.getDogsList(token: token, category: category) { [weak self] (callback) in
             guard let weakSelf = self else { return }
             do {
 
-                let beerList = try callback()
+                let dogList = try callback()
 
                 if refresh {
-                    weakSelf.beers = []
+                    weakSelf.dogs = []
                 }
-                if beerList.beers.isEmpty {
+                if dogList.isEmpty {
                     weakSelf.fetchCompleted = true
                 } else {
-                    weakSelf.beers.append(contentsOf: beerList.beers.map({ (beer) -> BeerViewModel in
-                        BeerViewModel(beer)
-                    }))
+                    weakSelf.dogs = dogList
                 }
-
                 weakSelf.delegate?.dogListViewModelWasFetch(weakSelf)
             } catch {
                 weakSelf.delegate?.dogListViewModel(weakSelf, threw: error)
                 weakSelf.error = true
-                weakSelf.page -= 1
                 weakSelf.delegate?.dogListViewModelWasFetch(weakSelf)
             }
             weakSelf.isFetching = false
         }
+    }
+
+    func setToken(token: String) {
+        self.token = token
+    }
+
+    func setCategory(category: String) {
+        self.category = category
     }
 }
