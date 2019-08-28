@@ -1,5 +1,5 @@
 //
-//  Token.swift
+//  User.swift
 //  desafios-iddog
 //
 //  Created by Carlos Alberto Mota Candreva on 26/08/19.
