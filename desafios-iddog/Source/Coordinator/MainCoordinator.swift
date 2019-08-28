@@ -22,10 +22,26 @@ class MainCoordinator: Coordinator {
         navigationController.pushViewController(vc, animated: false)
     }
 
-    func dogsGallery(token: String) {
-        let vc = GalleryViewController.instantiate()
+    func dogsGallery(token: String, category: String) {
+        let vc = DogGalleryViewController.instantiate()
         vc.coordinator = self
         vc.token = token
+        vc.category = category
+        navigationController.pushViewController(vc, animated: true)
+    }
+
+    func dogsSelector(token: String) {
+        let vc = DogsSelectorViewController.instantiate()
+        vc.coordinator = self
+        vc.token = token
+        navigationController.pushViewController(vc, animated: true)
+    }
+
+    func dogDetail(dogViewModel: DogViewModel) {
+        let vc = DogDetailViewController.instantiate()
+//        vc.coordinator = self
+//        vc.token = token
+        vc.setup(dogViewModel)
         navigationController.pushViewController(vc, animated: true)
     }
 }
