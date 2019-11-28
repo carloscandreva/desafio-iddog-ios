@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		140C51DE239095C20014C2D2 /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140C51DD239095C20014C2D2 /* Beer.swift */; };
+		140C51E0239095E10014C2D2 /* BeerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140C51DF239095E10014C2D2 /* BeerList.swift */; };
 		1452112C2311DDCB007843E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1452112B2311DDCB007843E1 /* AppDelegate.swift */; };
 		145211312311DDCB007843E1 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1452112F2311DDCB007843E1 /* Login.storyboard */; };
 		145211332311DDCE007843E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 145211322311DDCE007843E1 /* Assets.xcassets */; };
@@ -71,6 +73,8 @@
 
 /* Begin PBXFileReference section */
 		101E507437CBA5E168E40B5F /* Pods-desafios-iddog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-desafios-iddog.debug.xcconfig"; path = "Target Support Files/Pods-desafios-iddog/Pods-desafios-iddog.debug.xcconfig"; sourceTree = "<group>"; };
+		140C51DD239095C20014C2D2 /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
+		140C51DF239095E10014C2D2 /* BeerList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerList.swift; sourceTree = "<group>"; };
 		145211282311DDCB007843E1 /* desafiosIddog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = desafiosIddog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1452112B2311DDCB007843E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		145211302311DDCB007843E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
@@ -283,6 +287,8 @@
 			children = (
 				1452118A2314C388007843E1 /* DogsCategory.swift */,
 				1452118C2314C717007843E1 /* User.swift */,
+				140C51DD239095C20014C2D2 /* Beer.swift */,
+				140C51DF239095E10014C2D2 /* BeerList.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -677,6 +683,7 @@
 				14521170231376EE007843E1 /* DogGalleryViewController.swift in Sources */,
 				145211A12314ECAA007843E1 /* DogListViewModel.swift in Sources */,
 				145211B12314FA06007843E1 /* DogCollectionViewCell.swift in Sources */,
+				140C51E0239095E10014C2D2 /* BeerList.swift in Sources */,
 				1452118B2314C388007843E1 /* DogsCategory.swift in Sources */,
 				145211972314E3F2007843E1 /* Errors.swift in Sources */,
 				1452112C2311DDCB007843E1 /* AppDelegate.swift in Sources */,
@@ -684,6 +691,7 @@
 				145211C12315F3E8007843E1 /* DogsSelectorViewModel.swift in Sources */,
 				14521169231218A8007843E1 /* LoginViewController.swift in Sources */,
 				1452116623121548007843E1 /* ApiRouter.swift in Sources */,
+				140C51DE239095C20014C2D2 /* Beer.swift in Sources */,
 				145211AD2314F73C007843E1 /* UICollectionView+Extensions.swift in Sources */,
 				145211852314AB92007843E1 /* MainCoordinator.swift in Sources */,
 				145211992314E43D007843E1 /* ErrorHandler.swift in Sources */,
