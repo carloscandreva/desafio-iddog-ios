@@ -3,22 +3,22 @@ use_frameworks!
 inhibit_all_warnings!
 
 def commomPods
-  pod 'Alamofire', "~> 4.0"
+  pod 'lottie-ios'
   pod 'SwiftLint', "~>0.30.1"
   pod 'Kingfisher', "~>5.1"
   pod 'SwiftMessages', "~>6.0"
   pod 'Reachability', "~>3.2"
 end
 
-target 'desafiosIddog' do
+target 'genericAppForInterview' do
 
   commomPods
 
-  target 'desafiosIddogTests' do
+  target 'genericAppForInterviewTests' do
     inherit! :complete
   end
 
-  target 'desafiosIddogUITests' do
+  target 'genericAppForInterviewUITests' do
     inherit! :complete
   end
 end

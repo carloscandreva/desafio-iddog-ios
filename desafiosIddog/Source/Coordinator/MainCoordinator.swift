@@ -17,31 +17,20 @@ class MainCoordinator: Coordinator {
     }
 
     func start() {
-        let vc = LoginViewController.instantiate()
+        let vc = LaucherViewController.instantiate()
         vc.coordinator = self
         navigationController.pushViewController(vc, animated: false)
     }
 
-    func dogsGallery(token: String, category: String) {
-        let vc = DogGalleryViewController.instantiate()
+    func beerList() {
+        let vc = BeerListCollectionViewController.instantiate()
         vc.coordinator = self
-        vc.token = token
-        vc.category = category
-        navigationController.pushViewController(vc, animated: true)
+        navigationController.pushViewController(vc, animated: false)
     }
 
-    func dogsSelector(token: String) {
-        let vc = DogsSelectorViewController.instantiate()
-        vc.coordinator = self
-        vc.token = token
-        navigationController.pushViewController(vc, animated: true)
-    }
-
-    func dogDetail(dogViewModel: DogViewModel) {
-        let vc = DogDetailViewController.instantiate()
-//        vc.coordinator = self
-//        vc.token = token
-        vc.setup(dogViewModel)
-        navigationController.pushViewController(vc, animated: true)
+    func beerDetail(beerViewModel: BeerViewModel) {
+            let vc = BeerDetailViewController.instantiate()
+            vc.setup(beerViewModel)
+            navigationController.pushViewController(vc, animated: true)
     }
 }

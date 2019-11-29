@@ -1,6 +1,6 @@
 //
-//  desafiosIddogUITests.swift
-//  desafiosIddogUITests
+//  genericAppForInterviewUITests.swift
+//  genericAppForInterviewUITests
 //
 //  Created by Carlos Alberto Mota Candreva on 28/08/19.
 //  Copyright © 2019 Carlos Alberto Mota Candreva. All rights reserved.
@@ -8,7 +8,7 @@
 
 import XCTest
 
-class desafiosIddogUITests: XCTestCase {
+class genericAppForInterviewUITests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.

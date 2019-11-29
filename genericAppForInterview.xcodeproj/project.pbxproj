@@ -53,9 +53,9 @@
 		1452124923164824007843E1 /* UserErro.json in Resources */ = {isa = PBXBuildFile; fileRef = 1452124823164824007843E1 /* UserErro.json */; };
 		1452124B23164856007843E1 /* BaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1452124A23164856007843E1 /* BaseTests.swift */; };
 		14DE24112390CF5500D443DC /* LaucherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DE24102390CF5500D443DC /* LaucherViewController.swift */; };
-		2798B42A5362AF30A4FA2C8A /* Pods_desafiosIddog_desafiosIddogUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55A5F120A5BA40B93BEFB63A /* Pods_desafiosIddog_desafiosIddogUITests.framework */; };
-		564EA2F6D81B5A83F9AF7865 /* Pods_desafiosIddog_desafiosIddogTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BF8649B33D8189B66A442DF /* Pods_desafiosIddog_desafiosIddogTests.framework */; };
-		E20661EC5C6EB250B3CF5BC3 /* Pods_desafiosIddog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED630F89EA49F0651777DF8C /* Pods_desafiosIddog.framework */; };
+		523CA0A16C2C00EB73EC804F /* Pods_genericAppForInterview_genericAppForInterviewUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7F29B6BE016CBE5410B0927 /* Pods_genericAppForInterview_genericAppForInterviewUITests.framework */; };
+		7229025830543D7C657BF2A2 /* Pods_genericAppForInterview.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED54BD18A5333833B4867D05 /* Pods_genericAppForInterview.framework */; };
+		DA13270D7B0B825A29A1B7EA /* Pods_genericAppForInterview_genericAppForInterviewTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F34522784F0388E5F74D56D /* Pods_genericAppForInterview_genericAppForInterviewTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +76,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		010188A73F8BCD126BF4EDCD /* Pods-genericAppForInterview-genericAppForInterviewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-genericAppForInterview-genericAppForInterviewTests.release.xcconfig"; path = "Target Support Files/Pods-genericAppForInterview-genericAppForInterviewTests/Pods-genericAppForInterview-genericAppForInterviewTests.release.xcconfig"; sourceTree = "<group>"; };
 		101E507437CBA5E168E40B5F /* Pods-desafios-iddog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-desafios-iddog.debug.xcconfig"; path = "Target Support Files/Pods-desafios-iddog/Pods-desafios-iddog.debug.xcconfig"; sourceTree = "<group>"; };
 		140C51DD239095C20014C2D2 /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
 		140C51DF239095E10014C2D2 /* BeerList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerList.swift; sourceTree = "<group>"; };
@@ -99,7 +100,7 @@
 		140C52062390C91E0014C2D2 /* BaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTests.swift; sourceTree = "<group>"; };
 		140C52082390C93E0014C2D2 /* UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITests.swift; sourceTree = "<group>"; };
 		140C520F2390CC150014C2D2 /* laucherAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = laucherAnimation.json; sourceTree = "<group>"; };
-		145211282311DDCB007843E1 /* genericTestForInterview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = genericTestForInterview.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		145211282311DDCB007843E1 /* genericAppForInterview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = genericAppForInterview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1452112B2311DDCB007843E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		145211302311DDCB007843E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		145211322311DDCE007843E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -117,10 +118,10 @@
 		145211AE2314F779007843E1 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
 		145211B62314FF1F007843E1 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		1452121D23164521007843E1 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		145212232316460E007843E1 /* genericTestForInterviewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = genericTestForInterviewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		145212232316460E007843E1 /* genericAppForInterviewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = genericAppForInterviewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		145212252316460E007843E1 /* desafiosIddogUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = desafiosIddogUITests.swift; sourceTree = "<group>"; };
 		145212272316460E007843E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		145212312316461D007843E1 /* genericTestForInterviewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = genericTestForInterviewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		145212312316461D007843E1 /* genericAppForInterviewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = genericAppForInterviewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		145212352316461E007843E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1452123C2316466E007843E1 /* BaseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseMock.swift; sourceTree = "<group>"; };
 		1452123E2316469B007843E1 /* ReachabilityMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityMock.swift; sourceTree = "<group>"; };
@@ -129,19 +130,24 @@
 		1452124823164824007843E1 /* UserErro.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = UserErro.json; sourceTree = "<group>"; };
 		1452124A23164856007843E1 /* BaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTests.swift; sourceTree = "<group>"; };
 		14DE24102390CF5500D443DC /* LaucherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaucherViewController.swift; sourceTree = "<group>"; };
-		55A5F120A5BA40B93BEFB63A /* Pods_desafiosIddog_desafiosIddogUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_desafiosIddog_desafiosIddogUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F3C56B8BCB71A5975948708 /* Pods-genericAppForInterview.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-genericAppForInterview.debug.xcconfig"; path = "Target Support Files/Pods-genericAppForInterview/Pods-genericAppForInterview.debug.xcconfig"; sourceTree = "<group>"; };
+		4D4CAFF992384DD7DD2B6E6C /* Pods-genericAppForInterview-genericAppForInterviewUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-genericAppForInterview-genericAppForInterviewUITests.release.xcconfig"; path = "Target Support Files/Pods-genericAppForInterview-genericAppForInterviewUITests/Pods-genericAppForInterview-genericAppForInterviewUITests.release.xcconfig"; sourceTree = "<group>"; };
+		510CA114946387618C258B97 /* Pods-genericAppForInterview-genericAppForInterviewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-genericAppForInterview-genericAppForInterviewTests.debug.xcconfig"; path = "Target Support Files/Pods-genericAppForInterview-genericAppForInterviewTests/Pods-genericAppForInterview-genericAppForInterviewTests.debug.xcconfig"; sourceTree = "<group>"; };
+		56279B50C04864DBAE5FAC9E /* Pods-genericAppForInterview.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-genericAppForInterview.release.xcconfig"; path = "Target Support Files/Pods-genericAppForInterview/Pods-genericAppForInterview.release.xcconfig"; sourceTree = "<group>"; };
+		575B89B6D52819ED35E5BBDE /* Pods-genericAppForInterview-genericAppForInterviewUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-genericAppForInterview-genericAppForInterviewUITests.debug.xcconfig"; path = "Target Support Files/Pods-genericAppForInterview-genericAppForInterviewUITests/Pods-genericAppForInterview-genericAppForInterviewUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5789ED238E274F5240207CDE /* Pods-desafios-iddog-desafios-iddogUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-desafios-iddog-desafios-iddogUITests.debug.xcconfig"; path = "Target Support Files/Pods-desafios-iddog-desafios-iddogUITests/Pods-desafios-iddog-desafios-iddogUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		62D6F872607BA132E607064F /* Pods-desafiosIddog-desafiosIddogTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-desafiosIddog-desafiosIddogTests.debug.xcconfig"; path = "Target Support Files/Pods-desafiosIddog-desafiosIddogTests/Pods-desafiosIddog-desafiosIddogTests.debug.xcconfig"; sourceTree = "<group>"; };
 		738E2FDB994F49B961D1329D /* Pods-desafios-iddog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-desafios-iddog.release.xcconfig"; path = "Target Support Files/Pods-desafios-iddog/Pods-desafios-iddog.release.xcconfig"; sourceTree = "<group>"; };
-		7BF8649B33D8189B66A442DF /* Pods_desafiosIddog_desafiosIddogTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_desafiosIddog_desafiosIddogTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DB83E43EC9B578317991277 /* Pods-desafiosIddog-desafiosIddogUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-desafiosIddog-desafiosIddogUITests.release.xcconfig"; path = "Target Support Files/Pods-desafiosIddog-desafiosIddogUITests/Pods-desafiosIddog-desafiosIddogUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7F34522784F0388E5F74D56D /* Pods_genericAppForInterview_genericAppForInterviewTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_genericAppForInterview_genericAppForInterviewTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4E9A21D13F18B6E6F306D98 /* Pods-desafios-iddog-desafios-iddogUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-desafios-iddog-desafios-iddogUITests.release.xcconfig"; path = "Target Support Files/Pods-desafios-iddog-desafios-iddogUITests/Pods-desafios-iddog-desafios-iddogUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C5F7B0C21BA77D1873C2F4B9 /* Pods-desafiosIddog-desafiosIddogUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-desafiosIddog-desafiosIddogUITests.debug.xcconfig"; path = "Target Support Files/Pods-desafiosIddog-desafiosIddogUITests/Pods-desafiosIddog-desafiosIddogUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D82D5B2BC65A3DD0FF528C31 /* Pods-desafiosIddog-desafiosIddogTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-desafiosIddog-desafiosIddogTests.release.xcconfig"; path = "Target Support Files/Pods-desafiosIddog-desafiosIddogTests/Pods-desafiosIddog-desafiosIddogTests.release.xcconfig"; sourceTree = "<group>"; };
 		DBA1038D726C6FB729A3B4A9 /* Pods-desafiosIddog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-desafiosIddog.debug.xcconfig"; path = "Target Support Files/Pods-desafiosIddog/Pods-desafiosIddog.debug.xcconfig"; sourceTree = "<group>"; };
 		DC08291534E10383A9F62EE9 /* Pods-desafios-iddog-desafios-iddogTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-desafios-iddog-desafios-iddogTests.release.xcconfig"; path = "Target Support Files/Pods-desafios-iddog-desafios-iddogTests/Pods-desafios-iddog-desafios-iddogTests.release.xcconfig"; sourceTree = "<group>"; };
 		DD5B27B3608003A1B449D649 /* Pods-desafios-iddog-desafios-iddogTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-desafios-iddog-desafios-iddogTests.debug.xcconfig"; path = "Target Support Files/Pods-desafios-iddog-desafios-iddogTests/Pods-desafios-iddog-desafios-iddogTests.debug.xcconfig"; sourceTree = "<group>"; };
-		ED630F89EA49F0651777DF8C /* Pods_desafiosIddog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_desafiosIddog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED54BD18A5333833B4867D05 /* Pods_genericAppForInterview.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_genericAppForInterview.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7F29B6BE016CBE5410B0927 /* Pods_genericAppForInterview_genericAppForInterviewUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_genericAppForInterview_genericAppForInterviewUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8C1D187939D8359D9AE5C28 /* Pods-desafiosIddog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-desafiosIddog.release.xcconfig"; path = "Target Support Files/Pods-desafiosIddog/Pods-desafiosIddog.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -150,7 +156,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E20661EC5C6EB250B3CF5BC3 /* Pods_desafiosIddog.framework in Frameworks */,
+				7229025830543D7C657BF2A2 /* Pods_genericAppForInterview.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,7 +164,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2798B42A5362AF30A4FA2C8A /* Pods_desafiosIddog_desafiosIddogUITests.framework in Frameworks */,
+				523CA0A16C2C00EB73EC804F /* Pods_genericAppForInterview_genericAppForInterviewUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,7 +172,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				564EA2F6D81B5A83F9AF7865 /* Pods_desafiosIddog_desafiosIddogTests.framework in Frameworks */,
+				DA13270D7B0B825A29A1B7EA /* Pods_genericAppForInterview_genericAppForInterviewTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,9 +262,9 @@
 		145211292311DDCB007843E1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				145211282311DDCB007843E1 /* genericTestForInterview.app */,
-				145212232316460E007843E1 /* genericTestForInterviewUITests.xctest */,
-				145212312316461D007843E1 /* genericTestForInterviewTests.xctest */,
+				145211282311DDCB007843E1 /* genericAppForInterview.app */,
+				145212232316460E007843E1 /* genericAppForInterviewUITests.xctest */,
+				145212312316461D007843E1 /* genericAppForInterviewTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -496,6 +502,12 @@
 				D82D5B2BC65A3DD0FF528C31 /* Pods-desafiosIddog-desafiosIddogTests.release.xcconfig */,
 				C5F7B0C21BA77D1873C2F4B9 /* Pods-desafiosIddog-desafiosIddogUITests.debug.xcconfig */,
 				7DB83E43EC9B578317991277 /* Pods-desafiosIddog-desafiosIddogUITests.release.xcconfig */,
+				1F3C56B8BCB71A5975948708 /* Pods-genericAppForInterview.debug.xcconfig */,
+				56279B50C04864DBAE5FAC9E /* Pods-genericAppForInterview.release.xcconfig */,
+				510CA114946387618C258B97 /* Pods-genericAppForInterview-genericAppForInterviewTests.debug.xcconfig */,
+				010188A73F8BCD126BF4EDCD /* Pods-genericAppForInterview-genericAppForInterviewTests.release.xcconfig */,
+				575B89B6D52819ED35E5BBDE /* Pods-genericAppForInterview-genericAppForInterviewUITests.debug.xcconfig */,
+				4D4CAFF992384DD7DD2B6E6C /* Pods-genericAppForInterview-genericAppForInterviewUITests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -503,9 +515,9 @@
 		EE31B58C32DE984F8A75C221 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				ED630F89EA49F0651777DF8C /* Pods_desafiosIddog.framework */,
-				7BF8649B33D8189B66A442DF /* Pods_desafiosIddog_desafiosIddogTests.framework */,
-				55A5F120A5BA40B93BEFB63A /* Pods_desafiosIddog_desafiosIddogUITests.framework */,
+				ED54BD18A5333833B4867D05 /* Pods_genericAppForInterview.framework */,
+				7F34522784F0388E5F74D56D /* Pods_genericAppForInterview_genericAppForInterviewTests.framework */,
+				F7F29B6BE016CBE5410B0927 /* Pods_genericAppForInterview_genericAppForInterviewUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -513,9 +525,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		145211272311DDCB007843E1 /* genericTestForInterview */ = {
+		145211272311DDCB007843E1 /* genericAppForInterview */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 145211502311DDCE007843E1 /* Build configuration list for PBXNativeTarget "genericTestForInterview" */;
+			buildConfigurationList = 145211502311DDCE007843E1 /* Build configuration list for PBXNativeTarget "genericAppForInterview" */;
 			buildPhases = (
 				196C10E116A08B083246D95A /* [CP] Check Pods Manifest.lock */,
 				145211242311DDCB007843E1 /* Sources */,
@@ -527,14 +539,14 @@
 			);
 			dependencies = (
 			);
-			name = genericTestForInterview;
+			name = genericAppForInterview;
 			productName = "desafios-iddog";
-			productReference = 145211282311DDCB007843E1 /* genericTestForInterview.app */;
+			productReference = 145211282311DDCB007843E1 /* genericAppForInterview.app */;
 			productType = "com.apple.product-type.application";
 		};
-		145212222316460E007843E1 /* genericTestForInterviewUITests */ = {
+		145212222316460E007843E1 /* genericAppForInterviewUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1452122A2316460E007843E1 /* Build configuration list for PBXNativeTarget "genericTestForInterviewUITests" */;
+			buildConfigurationList = 1452122A2316460E007843E1 /* Build configuration list for PBXNativeTarget "genericAppForInterviewUITests" */;
 			buildPhases = (
 				1488E1876E29751B7B4271F1 /* [CP] Check Pods Manifest.lock */,
 				1452121F2316460E007843E1 /* Sources */,
@@ -547,14 +559,14 @@
 			dependencies = (
 				145212292316460E007843E1 /* PBXTargetDependency */,
 			);
-			name = genericTestForInterviewUITests;
+			name = genericAppForInterviewUITests;
 			productName = desafiosIddogUITests;
-			productReference = 145212232316460E007843E1 /* genericTestForInterviewUITests.xctest */;
+			productReference = 145212232316460E007843E1 /* genericAppForInterviewUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		145212302316461D007843E1 /* genericTestForInterviewTests */ = {
+		145212302316461D007843E1 /* genericAppForInterviewTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 145212382316461E007843E1 /* Build configuration list for PBXNativeTarget "genericTestForInterviewTests" */;
+			buildConfigurationList = 145212382316461E007843E1 /* Build configuration list for PBXNativeTarget "genericAppForInterviewTests" */;
 			buildPhases = (
 				AF45DD5C733A8B24E5C40D40 /* [CP] Check Pods Manifest.lock */,
 				1452122D2316461D007843E1 /* Sources */,
@@ -567,9 +579,9 @@
 			dependencies = (
 				145212372316461E007843E1 /* PBXTargetDependency */,
 			);
-			name = genericTestForInterviewTests;
+			name = genericAppForInterviewTests;
 			productName = desafiosIddogTests;
-			productReference = 145212312316461D007843E1 /* genericTestForInterviewTests.xctest */;
+			productReference = 145212312316461D007843E1 /* genericAppForInterviewTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -595,7 +607,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 145211232311DDCB007843E1 /* Build configuration list for PBXProject "genericTestForInterview" */;
+			buildConfigurationList = 145211232311DDCB007843E1 /* Build configuration list for PBXProject "genericAppForInterview" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -608,9 +620,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				145211272311DDCB007843E1 /* genericTestForInterview */,
-				145212222316460E007843E1 /* genericTestForInterviewUITests */,
-				145212302316461D007843E1 /* genericTestForInterviewTests */,
+				145211272311DDCB007843E1 /* genericAppForInterview */,
+				145212222316460E007843E1 /* genericAppForInterviewUITests */,
+				145212302316461D007843E1 /* genericAppForInterviewTests */,
 			);
 		};
 /* End PBXProject section */
@@ -663,7 +675,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-desafiosIddog-desafiosIddogUITests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-genericAppForInterview-genericAppForInterviewUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -685,7 +697,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-desafiosIddog-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-genericAppForInterview-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -698,15 +710,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-desafiosIddog/Pods-desafiosIddog-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-genericAppForInterview/Pods-genericAppForInterview-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-desafiosIddog/Pods-desafiosIddog-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-genericAppForInterview/Pods-genericAppForInterview-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-desafiosIddog/Pods-desafiosIddog-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-genericAppForInterview/Pods-genericAppForInterview-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		86ACA85857A05FE514C6C7CF /* [CP] Embed Pods Frameworks */ = {
@@ -715,15 +727,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-desafiosIddog-desafiosIddogUITests/Pods-desafiosIddog-desafiosIddogUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-genericAppForInterview-genericAppForInterviewUITests/Pods-genericAppForInterview-genericAppForInterviewUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-desafiosIddog-desafiosIddogUITests/Pods-desafiosIddog-desafiosIddogUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-genericAppForInterview-genericAppForInterviewUITests/Pods-genericAppForInterview-genericAppForInterviewUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-desafiosIddog-desafiosIddogUITests/Pods-desafiosIddog-desafiosIddogUITests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-genericAppForInterview-genericAppForInterviewUITests/Pods-genericAppForInterview-genericAppForInterviewUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		AF45DD5C733A8B24E5C40D40 /* [CP] Check Pods Manifest.lock */ = {
@@ -741,7 +753,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-desafiosIddog-desafiosIddogTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-genericAppForInterview-genericAppForInterviewTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -754,15 +766,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-desafiosIddog-desafiosIddogTests/Pods-desafiosIddog-desafiosIddogTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-genericAppForInterview-genericAppForInterviewTests/Pods-genericAppForInterview-genericAppForInterviewTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-desafiosIddog-desafiosIddogTests/Pods-desafiosIddog-desafiosIddogTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-genericAppForInterview-genericAppForInterviewTests/Pods-genericAppForInterview-genericAppForInterviewTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-desafiosIddog-desafiosIddogTests/Pods-desafiosIddog-desafiosIddogTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-genericAppForInterview-genericAppForInterviewTests/Pods-genericAppForInterview-genericAppForInterviewTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -832,12 +844,12 @@
 /* Begin PBXTargetDependency section */
 		145212292316460E007843E1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 145211272311DDCB007843E1 /* genericTestForInterview */;
+			target = 145211272311DDCB007843E1 /* genericAppForInterview */;
 			targetProxy = 145212282316460E007843E1 /* PBXContainerItemProxy */;
 		};
 		145212372316461E007843E1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 145211272311DDCB007843E1 /* genericTestForInterview */;
+			target = 145211272311DDCB007843E1 /* genericAppForInterview */;
 			targetProxy = 145212362316461E007843E1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -974,7 +986,7 @@
 		};
 		145211512311DDCE007843E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DBA1038D726C6FB729A3B4A9 /* Pods-desafiosIddog.debug.xcconfig */;
+			baseConfigurationReference = 1F3C56B8BCB71A5975948708 /* Pods-genericAppForInterview.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -985,7 +997,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = candreva.genericTestForInterview;
-				PRODUCT_NAME = genericTestForInterview;
+				PRODUCT_NAME = genericAppForInterview;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -993,7 +1005,7 @@
 		};
 		145211522311DDCE007843E1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F8C1D187939D8359D9AE5C28 /* Pods-desafiosIddog.release.xcconfig */;
+			baseConfigurationReference = 56279B50C04864DBAE5FAC9E /* Pods-genericAppForInterview.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -1004,7 +1016,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = candreva.genericTestForInterview;
-				PRODUCT_NAME = genericTestForInterview;
+				PRODUCT_NAME = genericAppForInterview;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -1012,7 +1024,7 @@
 		};
 		1452122B2316460E007843E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C5F7B0C21BA77D1873C2F4B9 /* Pods-desafiosIddog-desafiosIddogUITests.debug.xcconfig */;
+			baseConfigurationReference = 575B89B6D52819ED35E5BBDE /* Pods-genericAppForInterview-genericAppForInterviewUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = desafiosIddogUITests/Info.plist;
@@ -1032,7 +1044,7 @@
 		};
 		1452122C2316460E007843E1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7DB83E43EC9B578317991277 /* Pods-desafiosIddog-desafiosIddogUITests.release.xcconfig */;
+			baseConfigurationReference = 4D4CAFF992384DD7DD2B6E6C /* Pods-genericAppForInterview-genericAppForInterviewUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = desafiosIddogUITests/Info.plist;
@@ -1052,7 +1064,7 @@
 		};
 		145212392316461E007843E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 62D6F872607BA132E607064F /* Pods-desafiosIddog-desafiosIddogTests.debug.xcconfig */;
+			baseConfigurationReference = 510CA114946387618C258B97 /* Pods-genericAppForInterview-genericAppForInterviewTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -1067,13 +1079,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/genericTestForInterview.app/genericTestForInterview";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/genericAppForInterview.app/genericAppForInterview";
 			};
 			name = Debug;
 		};
 		1452123A2316461E007843E1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D82D5B2BC65A3DD0FF528C31 /* Pods-desafiosIddog-desafiosIddogTests.release.xcconfig */;
+			baseConfigurationReference = 010188A73F8BCD126BF4EDCD /* Pods-genericAppForInterview-genericAppForInterviewTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -1088,14 +1100,14 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/genericTestForInterview.app/genericTestForInterview";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/genericAppForInterview.app/genericAppForInterview";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		145211232311DDCB007843E1 /* Build configuration list for PBXProject "genericTestForInterview" */ = {
+		145211232311DDCB007843E1 /* Build configuration list for PBXProject "genericAppForInterview" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1452114E2311DDCE007843E1 /* Debug */,
@@ -1104,7 +1116,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		145211502311DDCE007843E1 /* Build configuration list for PBXNativeTarget "genericTestForInterview" */ = {
+		145211502311DDCE007843E1 /* Build configuration list for PBXNativeTarget "genericAppForInterview" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				145211512311DDCE007843E1 /* Debug */,
@@ -1113,7 +1125,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1452122A2316460E007843E1 /* Build configuration list for PBXNativeTarget "genericTestForInterviewUITests" */ = {
+		1452122A2316460E007843E1 /* Build configuration list for PBXNativeTarget "genericAppForInterviewUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1452122B2316460E007843E1 /* Debug */,
@@ -1122,7 +1134,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		145212382316461E007843E1 /* Build configuration list for PBXNativeTarget "genericTestForInterviewTests" */ = {
+		145212382316461E007843E1 /* Build configuration list for PBXNativeTarget "genericAppForInterviewTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				145212392316461E007843E1 /* Debug */,

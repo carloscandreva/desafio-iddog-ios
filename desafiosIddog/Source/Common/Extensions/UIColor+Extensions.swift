@@ -11,8 +11,8 @@ import UIKit
 
 // MARK: - Collor palette
 extension UIColor {
-    static var metal: UIColor {
-        return UIColor(displayP3Red: 43.0/255.0, green: 48.0/255.0, blue: 58.0/255.0, alpha: 1)
+    static var purple: UIColor {
+        return UIColor(displayP3Red: 70.0/255.0, green: 49.0/255.0, blue: 104.0/255.0, alpha: 1)
     }
 
     static var blackCoral: UIColor {

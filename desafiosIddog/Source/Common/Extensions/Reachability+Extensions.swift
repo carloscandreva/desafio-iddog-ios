@@ -8,7 +8,7 @@
 
 import Reachability
 
-// MARK: - BrewDogReachability
+// MARK: - ChallengeReachability
 extension Reachability: ChallengeReachability {
 
     /// True if internet is reachable
